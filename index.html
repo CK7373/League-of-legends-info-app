@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of legends</title>
+    <link ref="stylesheet" src="./style.css">
+</head>
+<body>
+    <style>
+       body{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: white;
+        display:flex;
+        flex-direction: column;
+
+       }
+
+       #logo{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        background-color: darkblue;
+        color: gray;
+        padding: 30px;
+       }
+
+       #character-images{
+       
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content:flex-start
+        }
+
+      img{
+        width: 100px; 
+        margin: 0px;
+        cursor: pointer; 
+        transition: transform 0.2s; 
+        }  
+    
+       #character-stats {
+       background-color: darkgrey; 
+        padding: 0px; 
+        border-radius: 5px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        text-align: center; 
+        
+           } 
+
+      #large-image-container {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        margin: 20px 0; 
+        
+        }
+
+        #large-image {
+            width: 700px; 
+            margin-bottom: 10px; 
+        }
+
+    </style>
+  <div id="logo">
+    <h1>League Of Legends Champion Pool</h1>
+  </div>
+  
+   <input type="text" id="search-input" placeholder="Search for a champion..." /><button class="btn btn-outline-success" type="submit">Search</button>
+   
+   
+  
+  <div id="character-stats"></div>
+
+  <div id="large-image-container">
+    <img id="large-image" src="" alt="Large Champion Image" style="display: none;"> <!-- Initially hidden -->
+</div>
+
+  <div id="character-images"></div>
+
+ 
+ 
+  
+
+
+
+
+
+
+
+
+
+
+    
+   <script src="./script.js"></script> 
+</body>
+</html>
